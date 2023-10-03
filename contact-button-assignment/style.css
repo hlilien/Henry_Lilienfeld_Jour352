@@ -1,0 +1,21 @@
+/*
+MY COLOR PALETTE
+Color 1 - #436436
+Color 2 - #A9714B
+Color 3 - #D6D4A0
+Color 4 - #56393B
+Color 5 - #2B3A67
+*/
+
+body {
+    background-color:#D6D4A0;
+}
+
+button {
+    background-color:#A9714B;
+    color:#56393B;
+}
+
+button:hover {
+    background-color:#436436;
+}
