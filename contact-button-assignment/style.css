@@ -9,24 +9,46 @@ Color 5 - #2B3A67
 
 body {
     background-color:#D6D4A0;
+    text-align: center;
 }
 
 button {
     background-color:#A9714B;
     color:#56393B;
+    width: 120px;
+    text-align: center;
+    padding: 20px;
 }
+
+.button5 {border-radius: 50%;}
 
 button:hover {
     background-color:#436436;
+    text-align: center;
+    border-color: aqua;
 }
 
 h1 {
-   font-family:'Abril Fatface', cursive;
-   font-size:70px;
+   font-family:'Railway Light', sans-serif;
+   font-size:35px;
+   letter-spacing: normal;
+   text-transform: capitalize;
+   text-align: center;
 }
 
 h2 {
-  font-family:'Poppins', sans-serif;
-  text-transform:uppercase;
+  font-family:'Poppins', cursive;
+  font-size: 28px;
+  text-transform:lowercase;
   letter-spacing:normal;
+  text-align: center;
 }
+
+div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
