@@ -1,3 +1,5 @@
+@media {
+    
 body {
   font-family: 'Roboto Mono', monospace;
   color: white;
@@ -119,8 +121,12 @@ button {
   text-align: center;
 }
 
-button:hover {
-  color: grey;
+#buttons:hover {
+    background-color: greenyellow;
+}
+
+#button:hover {
+    background-color: yellow;
 }
 
 #menu {
@@ -269,14 +275,25 @@ button:hover {
   margin-bottom: 20px;
   padding-left: 20px;
   vertical-align: bottom;
-  margin-top: 300px;
+  margin-top: 40px;
 }
 
-@media screen and (max-width:1024px) {
-    #global-wrapper-outer > #global-wrapper-inner {
-        width: 100%;
-    }
-    #global-wrapper-outer > #global-wrapper-inner > nav {
-        display: none;
-    }
+}
+
+@media (min-width: 576px) {
+    
+#experience {
+    margin-bottom: 100px;
+    color: beige;
+}
+
+#education {
+    margin-bottom: 100px;
+    color: beige;
+}
+
+#skills {
+    margin-bottom: 0px;
+    color: beige;
+}
 }
