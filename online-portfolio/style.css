@@ -1,4 +1,282 @@
-img {
-    width: 250px;
-    height: 300px;
+body {
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  background-color: #020202;
+}
+
+/* top banner */
+
+#banner {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/banner.jpg);
+  background-color: #020202;
+  height: 100vh;
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#name {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 8vw;
+  color: white;
+  padding-left: 10vw;
+  padding-top: 1vh;
+  line-height: 15vh;
+}
+
+#title {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 4vw;
+  color: white;
+  padding-left: 10vw;
+  line-height: 8vh;
+}
+
+.name-title {
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+}
+
+/* scroll element */
+
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 2px solid white;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.scroll-down::before,
+.scroll-down::after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  border: 2px solid white;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::after{
+  top: 30%;
+  animation-delay: .3s;
+}
+
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    top: 90%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* scroll menu */
+
+.scroll {
+  margin-top: 150px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30vh;
+}
+
+.line {
+  border: 2px solid white;
+  height: 100px;
+  margin-left: 25%;
+  top: 0;
+  bottom: 0;
+  width:0;
+  border-radius: 2px;
+}
+
+.scroll-item {
+  text-decoration: none;
+  color: white;
+  line-height: 10px;
+}
+
+#scroll-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+
+#scroll-menu li {
+  text-align: center;
+  font-size: 25px;
+  margin-right: 9vw;
+}
+
+/* menu */
+
+.bi {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.bi:hover {
+  color: grey;
+}
+
+#menu {
+  padding-top: 15px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+#menu li {
+  display: inline;
+  padding: 0 20px;
+}
+
+/* photo/bio */
+
+.bio {
+  padding: 20px 0;
+}
+
+.description {
+  padding-top: 15px;
+  margin-right: 30%;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#portrait {
+  float: left;
+  border-radius: 50%;
+  margin-left: 70px;
+  margin-right: 20px;
+}
+
+/* content wrapper */
+
+#wrapper {
+  padding-left: 30px;
+  margin-right: 400px;
+  padding-bottom: 20px;
+}
+
+
+
+/* section header */
+
+#experience {
+  margin-bottom: 200px;
+}
+
+.sectionheader {
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 70%;
+  min-width: 300px;
+  background-color: #020202;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  width: 100% !important;
+}
+
+.jobtitle {
+  font-weight: 400;
+  font-size: 2em;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.organization {
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+.date {
+  font-weight: 400;
+  font-size: 1em;
+  margin: 10px, 0px, 0px;
+  font-style: italic;
+}
+
+/* education formatting */
+
+#degrees {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.degree-type {
+  font-weight: 400;
+  font-size: 2em;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.school {
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+.graduation {
+  font-weight: 400;
+  font-size: 1em;
+  margin: 10px, 0px, 0px;
+  font-style: italic;
+  padding-bottom: 20px;
+}
+
+/* skills formatting */
+
+#skills {
+  list-style-type: none;
+  padding-top: 20px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#skills li {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* footer */
+
+.footer {
+  text-align: left;
+}
+
+.footer p {
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  vertical-align: bottom;
+  margin-top: 300px;
 }
