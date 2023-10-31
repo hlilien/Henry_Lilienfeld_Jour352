@@ -25,12 +25,13 @@ body {
     letter-spacing: normal;
 }
 #banner {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/banner.jpg);
   background-color: darkseagreen;
   height: 35vh;
   background-position: 30% 20%;
   background-repeat: no-repeat;
   background-size:auto;
+  background-image: linear-gradient;
+  url(images/banner.jpg);
   position: center;
   margin-bottom: 0px;
   text-align: center;
@@ -275,7 +276,7 @@ button {
   margin-bottom: 20px;
   padding-left: 20px;
   vertical-align: bottom;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 }
