@@ -3,18 +3,6 @@ body {
 
 }
 
-nav {
-  background-color: rgba(0, 0, 0, 1);
-  font-family: Georgia, serif;
-}
-
-.navbar-brand {
-  font-family: 'Playfair Display', serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 1.5em;
-}
-
 .form-control, .form-control:focus {
   background-color:rgba(0,0,0,0);
 }
@@ -22,9 +10,9 @@ nav {
 .byline {
   margin: 0 auto;
   font-family: 'Playfair Display', serif;
-  border-left: 2px solid red;
   padding-left: 1%;
   padding-right: 1%;
+  text-align: center;
 }
 
 .time {
@@ -39,6 +27,7 @@ nav {
   font-family: Georgia;
   color: white;
   padding-top: 2%;
+  text-align: center;
 }
 
 .hero {
@@ -118,7 +107,7 @@ nav {
 }
 
 .cap {
-  text-align: left;
+  text-align: center;
   padding-top: 2px;
   font-family: Georgia, serif;
   font-size: 0.85em;
@@ -166,10 +155,8 @@ nav {
 .row-img-big {
   text-align: center;
   padding: 5% 5% 5% 5%;
-  width: auto;
 
 }
-
 
 .img-big {
   width: 50vw;
@@ -191,21 +178,22 @@ nav {
 
 blockquote {
   font-family: 'Playfair Display', serif;
-  padding: 20% 20% 25% 25%
+  padding: 5% 5% 5% 5%;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .quote {
-  font-size: 2.5em;
+  font-size: 14px;
+  padding: 5% 5% 5% 5%;
   border-left: 3px solid green;
-  padding: 0 1%;
+  border-right: 3px solid green;
   text-align: center;
 }
 
 .speaker {
   text-align: right;
-  font-size: 1.5em;
+  font-size: 12px;
   border-right: 3px solid green;
   padding-right: 1%;
 }
@@ -220,7 +208,7 @@ blockquote {
   border-left: 3px solid green;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .headline {
     font-size: 3em;
     padding:25% 5% 2.5% 5%;
@@ -250,7 +238,7 @@ blockquote {
   }
 }
 
-@media only screen and (max-width: 578px) {
+@media only screen and (max-width: 576px) {
   .form-inline, .form-control {
     display: none;
   }
